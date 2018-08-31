@@ -13,6 +13,8 @@
 		083FE89621366A390079027C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083FE89521366A390079027C /* Assets.xcassets */; };
 		083FE89921366A390079027C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083FE89721366A390079027C /* LaunchScreen.storyboard */; };
 		083FE89C21366A390079027C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 083FE89B21366A390079027C /* main.m */; };
+		08BECFBC21396D3A00F7F4E3 /* CircularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BECFB821396D3900F7F4E3 /* CircularViewController.m */; };
+		08BECFBD21396D3A00F7F4E3 /* RectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BECFB921396D3A00F7F4E3 /* RectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		083FE89821366A390079027C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		083FE89A21366A390079027C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		083FE89B21366A390079027C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08BECFB821396D3900F7F4E3 /* CircularViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularViewController.m; sourceTree = "<group>"; };
+		08BECFB921396D3A00F7F4E3 /* RectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectViewController.m; sourceTree = "<group>"; };
+		08BECFBA21396D3A00F7F4E3 /* CircularViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularViewController.h; sourceTree = "<group>"; };
+		08BECFBB21396D3A00F7F4E3 /* RectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				083FE88D21366A370079027C /* AppDelegate.m */,
 				083FE88F21366A370079027C /* ViewController.h */,
 				083FE89021366A370079027C /* ViewController.m */,
+				08BECFBA21396D3A00F7F4E3 /* CircularViewController.h */,
+				08BECFB821396D3900F7F4E3 /* CircularViewController.m */,
+				08BECFBB21396D3A00F7F4E3 /* RectViewController.h */,
+				08BECFB921396D3A00F7F4E3 /* RectViewController.m */,
 				083FE89221366A370079027C /* Main.storyboard */,
 				083FE89521366A390079027C /* Assets.xcassets */,
 				083FE89721366A390079027C /* LaunchScreen.storyboard */,
@@ -144,6 +154,8 @@
 				083FE89121366A370079027C /* ViewController.m in Sources */,
 				083FE89C21366A390079027C /* main.m in Sources */,
 				083FE88E21366A370079027C /* AppDelegate.m in Sources */,
+				08BECFBC21396D3A00F7F4E3 /* CircularViewController.m in Sources */,
+				08BECFBD21396D3A00F7F4E3 /* RectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +295,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CAReplicatorLayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +304,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = EJ.CAReplicatorLayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -299,7 +313,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CAReplicatorLayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = EJ.CAReplicatorLayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -1,24 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-    </dependencies>
-    <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-    </scenes>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JBt-o3-fpJ">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+<capability name="Safe area layout guides" minToolsVersion="9.0"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<scenes>
+<!--Navigation Controller-->
+<scene sceneID="75R-rA-VRV">
+<objects>
+<navigationController id="JBt-o3-fpJ" sceneMemberID="viewController">
+<navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZEi-JC-FD3">
+<rect key="frame" x="0.0" y="20" width="375" height="44"/>
+<autoresizingMask key="autoresizingMask"/>
+<color key="barTintColor" red="0.86634657118055558" green="0.99953597319444443" blue="1" alpha="0.69343964041095896" colorSpace="custom" customColorSpace="sRGB"/>
+<textAttributes key="largeTitleTextAttributes">
+<color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</textAttributes>
+</navigationBar>
+<connections>
+<segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HwD-Bp-iev"/>
+</connections>
+</navigationController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="XUF-Lh-Wc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="-1036" y="-47"/>
+</scene>
+<!--CAReplicatorLayer简单使用-->
+<scene sceneID="tne-QT-ifu">
+<objects>
+<viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+<view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0PD-La-Hdb">
+<rect key="frame" x="0.0" y="64" width="375" height="603"/>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+<connections>
+<outlet property="dataSource" destination="BYZ-38-t0r" id="dFC-wx-7oj"/>
+<outlet property="delegate" destination="BYZ-38-t0r" id="NNg-sw-c9V"/>
+</connections>
+</tableView>
+</subviews>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="0PD-La-Hdb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B5u-h4-Dg1"/>
+<constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0PD-La-Hdb" secondAttribute="trailing" id="HW1-u7-KKJ"/>
+<constraint firstItem="0PD-La-Hdb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RWn-To-FF2"/>
+<constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0PD-La-Hdb" secondAttribute="bottom" id="U69-oz-4pe"/>
+</constraints>
+<viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+</view>
+<navigationItem key="navigationItem" title="CAReplicatorLayer简单使用" id="v5i-a2-bng"/>
+<connections>
+<outlet property="tableView" destination="0PD-La-Hdb" id="Hpq-22-cA6"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="-262" y="-40"/>
+</scene>
+</scenes>
 </document>
